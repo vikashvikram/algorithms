@@ -5,7 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func prepareLinkedList(arr []int) *ListNode  {
+func PrepareLinkedList(arr []int) *ListNode  {
 	if len(arr) == 0 {
 		return nil
 	}
@@ -68,6 +68,6 @@ func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		result = append(result, mod)
 	}
 
-	return prepareLinkedList(result)
+	return PrepareLinkedList(result)
 
 }
