@@ -1,11 +1,6 @@
 package algorithms
 
-import (
-	"os"
-	"fmt"
-)
-
-func isIsomorphic(str1, str2 string) bool {
+func IsIsomorphic(str1, str2 string) bool {
 	if len(str1) != len(str2) {
 		return false
 	}

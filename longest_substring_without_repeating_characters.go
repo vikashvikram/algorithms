@@ -1,10 +1,5 @@
 package algorithms
 
-import (
-	"os"
-	"fmt"
-)
-
 func LengthOfLongestSubstring(s string) int {
 	start := 0
 	max := 0

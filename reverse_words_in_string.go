@@ -1,10 +1,6 @@
 package algorithms
 
-import (
-	"os"
-	"fmt"
-	"strings"
-)
+import "strings"
 
 func Reverse(str string) string {
 	str_arr := strings.Split(str, " ")

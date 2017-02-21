@@ -1,10 +1,5 @@
 package algorithms
 
-import (
-	"fmt"
-	"os"
-)
-
 func Rotate(arr []string, index int) []string {
 	index = index % len(arr)
 	new_arr := []string(nil)

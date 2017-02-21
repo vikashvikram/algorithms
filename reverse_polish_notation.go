@@ -2,9 +2,9 @@ package algorithms
 
 import (
 	"os"
-	"fmt"
 	"errors"
 	"strconv"
+	"fmt"
 )
 
 var (

@@ -1,7 +1,5 @@
 package algorithms
 
-import "fmt"
-
 func TwoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for index, val := range nums {
