@@ -2,7 +2,6 @@ package compute
 
 import (
 	"os"
-	"errors"
 	"strconv"
 	"fmt"
 )
