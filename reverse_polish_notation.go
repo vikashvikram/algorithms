@@ -9,35 +9,19 @@ import (
 
 var (
 	input_arr = os.Args[1:]
-	rpn_stack = &stack{[]int{}, 0}
+	rpn_stack = &Stack{}
 )
-
-type stack struct {
-	data []int
-	length int
-}
-
-func (s *stack) Pop() (int, error) {
-	if s.length == 0 {
-		return 0, errors.New("Error: Stack is empty")
-	}
-	val := s.data[s.length-1]
-	s.data = s.data[:s.length-1]
-	s.length -= 1
-	return val, nil
-}
-
-func (s *stack) Push(val int)  {
-	s.data = append(s.data, val)
-	s.length += 1
-}
 
 func ReversePolishNotation() (int, error)  {
 	for i := 0; i < len(input_arr); i++ {
 		char := input_arr[i]
 		doCal(char)
 	}
-	return rpn_stack.Pop()
+	if val, err := rpn_stack.Pop(); err != nil {
+		return 0, err
+	} else {
+		return val.(int), nil
+	}
 }
 
 func doCal(char string)  {
@@ -62,7 +46,7 @@ func doCal(char string)  {
 func getArguments() (int, int)  {
 	val2, _ := rpn_stack.Pop()
 	val1, _ := rpn_stack.Pop()
-	return val1, val2
+	return val1.(int), val2.(int)
 }
 
 func add()  {
