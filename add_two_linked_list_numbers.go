@@ -1,4 +1,4 @@
-package algorithms
+package compute
 
 type ListNode struct {
 	Val int

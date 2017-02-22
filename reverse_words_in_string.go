@@ -1,4 +1,4 @@
-package algorithms
+package compute
 
 import "strings"
 

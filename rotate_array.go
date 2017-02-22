@@ -1,4 +1,4 @@
-package algorithms
+package compute
 
 func Rotate(arr []string, index int) []string {
 	index = index % len(arr)

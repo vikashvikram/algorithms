@@ -1,4 +1,4 @@
-package algorithms
+package compute
 
 func IsIsomorphic(str1, str2 string) bool {
 	if len(str1) != len(str2) {

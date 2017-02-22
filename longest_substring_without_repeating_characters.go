@@ -1,4 +1,4 @@
-package algorithms
+package compute
 
 func LengthOfLongestSubstring(s string) int {
 	start := 0
